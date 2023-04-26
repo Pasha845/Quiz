@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section class="quiz">
+    <div class="container flex">
+      <div>
+        <h2 class="quiz__title">Подберём вуз мечты</h2>
+        <p class="quiz__text">
+          Ответьте на 8 простых вопросов,
+          и мы составим список наболее подходящих для вас вузов
+        </p>
+        <picture>
+          <source srcset="img/quiz__mobile-foto.webp" media="(min-width: 320px) and (max-width: 576px)">
+          <source srcset="img/quiz__default-foto.png" media="(min-width: 577px)">
+          <img srcset="img/quiz__default-foto.png" alt="Default image" src="#">
+        </picture>
+      </div>
+      <div class="quiz__cube">
+        <div class="flex">
+          <h3 class="quiz__subtitle">Ваша подборка готова! 🥳 Куда нам отправить её?</h3>
+          <p class="quiz__step">Шаг 9/9</p>
+        </div>
+        <form>
+          <div class="quiz__div quiz__list">
+            <label class="quiz__label quiz__label-width flex">
+              <input class="quiz__subinput" placeholder="Как вас зовут?" type="text">
+            </label>
+            <label class="quiz__label quiz__label-width flex">
+              <input class="quiz__subinput" placeholder="Номер телефона" type="tel">
+            </label>
+            <label class="quiz__label quiz__label-width flex">
+              <input class="quiz__subinput" placeholder="E-mail" type="email">
+            </label>
+          </div>
+          <a class="quiz__btn-form" href="#" type="submit">Получить подборку</a>
+          <p class="quiz__rules">Нажимая на кнопку, вы даете согласие на обработку своих <a class="quiz__link" href="#">Персональных данных</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="js/input.js"></script>
+</body>
+</html>
